@@ -11,7 +11,7 @@ public class LeapYearCalculatorTest {
         Assertions.assertTrue(result);
     }
     @Test
-    public void test2025IsLeapYear(){
+    public void test2025IsNotLeapYear(){
         LeapYearCalculator leapYear = new LeapYearCalculator();
         boolean result = leapYear.isLeapYear(2025);
         Assertions.assertFalse(result);
@@ -23,7 +23,7 @@ public class LeapYearCalculatorTest {
         Assertions.assertTrue(result);
     }
     @Test
-    public void test1900IsLeapYear(){
+    public void test1900IsNotLeapYear(){
         LeapYearCalculator leapYear = new LeapYearCalculator();
         boolean result = leapYear.isLeapYear(1900);
         Assertions.assertFalse(result);
